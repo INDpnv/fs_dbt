@@ -1,0 +1,17 @@
+selectors:
+  - name: orders_dwh_daily
+    description: "Update orders dwh tables"
+    definition:
+      union:
+        - method: tag
+          value: dwh
+        - exclude:
+            - method: tag
+              value: date
+
+  - name: orders_dwh_all
+    description: "Update orders dwh tables"
+    definition:
+      union:
+        - method: tag
+          value: dwh

@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: sales
+    columns:
+      - name: order_id
+        description: ""
+
+      - name: product_id
+        description: ""
+
+      - name: supplier_id
+        description: ""
+
+      - name: customer_id
+        description: ""
+
+      - name: order_status
+        description: ""
+
+      - name: order_total_price
+        description: ""
+
+      - name: order_priority
+        description: ""
+
+      - name: order_clerk
+        description: ""
+
+      - name: order_ship_priority
+        description: ""
+
+      - name: line_item_number
+        description: ""
+
+      - name: line_item_quantity
+        description: ""
+
+      - name: customer_account_balance
+        description: ""
+
+      - name: customer_market_segment
+        description: ""
+
+      - name: customer_nation_name
+        description: ""
+
+      - name: customer_region_name
+        description: ""
+
+      - name: order_date
+        description: ""

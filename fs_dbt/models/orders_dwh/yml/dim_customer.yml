@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_key
+        description: The surrogate key of the customer record
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: The identifier of the customer record
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: Customer name
+        tests:
+          - not_null
+      - name: customer_address
+        description: Encrypted customer address
+      - name: customer_phone
+        description: Customer phone number
+      - name: customer_account_balance
+        description: Remaining account balance
+        tests:
+          - not_null
+      - name: customer_market_segment
+        description: Market Segment
+      - name: customer_nation_name
+        description: Nation the customer is based on
+      - name: customer_region_name
+        description: Region the customer is based on

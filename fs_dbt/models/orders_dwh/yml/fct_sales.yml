@@ -1,0 +1,84 @@
+version: 2
+
+models:
+  - name: fct_sales
+    columns:
+      - name: sales_key
+        description: ""
+        tests:
+          - not_null
+          - unique
+      - name: customer_key
+        description: ""
+        tests:
+          - not_null
+      - name: order_date_key
+        description: ""
+        tests:
+          - not_null
+      - name: order_id
+        description: ""
+        tests:
+          - not_null
+      - name: product_id
+        description: ""
+        tests:
+          - not_null
+      - name: supplier_id
+        description: ""
+        tests:
+          - not_null
+      - name: customer_id
+        description: ""
+        tests:
+          - not_null
+      - name: order_status
+        description: ""
+
+      - name: order_total_price
+        description: ""
+
+      - name: order_priority
+        description: ""
+
+      - name: order_clerk
+        description: ""
+
+      - name: order_ship_priority
+        description: ""
+
+      - name: line_item_number
+        description: ""
+
+      - name: line_item_quantity
+        description: ""
+
+      - name: line_item_extended_price
+        description: ""
+
+      - name: line_item_discount
+        description: ""
+
+      - name: line_item_tax
+        description: ""
+
+      - name: line_item_return_flag
+        description: ""
+
+      - name: line_item_status
+        description: ""
+
+      - name: line_item_ship_date
+        description: ""
+
+      - name: line_item_commit_date
+        description: ""
+
+      - name: line_item_receipt_date
+        description: ""
+
+      - name: line_item_ship_instruction
+        description: ""
+
+      - name: line_item_ship_mode
+        description: ""

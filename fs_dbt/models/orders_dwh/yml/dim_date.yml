@@ -118,18 +118,3 @@ models:
 
       - name: year_end_date
         description: ""
-
-      - name: fiscal_week_of_year
-        description: ""
-
-      - name: fiscal_week_of_period
-        description: ""
-
-      - name: fiscal_period_number
-        description: ""
-
-      - name: fiscal_quarter_number
-        description: ""
-
-      - name: fiscal_period_of_quarter
-        description: ""

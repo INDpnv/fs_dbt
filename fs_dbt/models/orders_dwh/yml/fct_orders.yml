@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: fct_sales
+  - name: fct_orders
     columns:
       - name: sales_key
         description: ""

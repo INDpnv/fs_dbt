@@ -6,6 +6,7 @@
    )
 }}
 
+-- depends_on: {{ ref('dim_date') }}
 select
     {{ dbt_utils.generate_surrogate_key(['o.o_orderkey', 'oi.l_partkey', 'oi.l_suppkey', 'oi.l_linenumber']) }} as sales_key,
     {{ dbt_utils.generate_surrogate_key(['o.o_custkey']) }} as customer_key,
@@ -36,5 +37,5 @@ inner join {{ source('snowflake_sample_data', 'lineitem') }} oi
 on o.o_orderkey = oi.l_orderkey
 where 1=1
 {% if is_incremental() %}
-    and o.o_orderdate > current_date()-3
+    and o.o_orderdate >= (select max(d.date_day) from {{ this }} f join {{ ref('dim_date') }} d on f.order_date_key = d.date_key) - 3
 {% endif %}

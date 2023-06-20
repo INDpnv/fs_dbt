@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: sales
+    description: Semantic view that pulls in customer and order details based on the keys.
     columns:
       - name: order_id
         description: ""

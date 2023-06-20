@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: dim_customer
+    description: Dimension table for customers - combines the nation and region data for each customers.
     columns:
       - name: customer_key
         description: The surrogate key of the customer record
